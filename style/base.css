@@ -8,8 +8,8 @@ html {
 }
 
 .todo {
-  text-align: center;
-  margin: 6rem 0;
+  margin: 6rem auto;
+  width: 50%;
 }
 
 .todo h1 {
@@ -30,7 +30,6 @@ html {
           justify-content: space-between;
   margin: 0 auto;
   padding: 1rem 1.5rem;
-  width: 50%;
 }
 
 .todo_form input[type="text"] {
@@ -105,7 +104,6 @@ html {
   list-style: none;
   margin: 3rem auto;
   padding: 0;
-  width: 50%;
 }
 
 .todo__list li {
@@ -124,15 +122,20 @@ html {
           animation: append-animate 0.3s ease;
 }
 
-.todo__list .delete > i {
+.todo__list i {
   cursor: pointer;
   opacity: 0.5;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.todo__list .delete > i:hover {
+.todo__list i:hover {
   opacity: 1;
+}
+
+.todo__total {
+  font-size: 1.6rem;
+  text-align: left;
 }
 
 @-webkit-keyframes append-animate {
